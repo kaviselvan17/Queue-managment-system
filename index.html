@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QLess</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1>QLess</h1>
+        <p>Smart Queue Management</p>
+    </div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Queue Status</a>
+        <a href="#">Contact Us</a>
+        <a href="admin.html">Admin 
+        </a>
+        
+    </nav>
+</header>
+
+
+<section class="hero">
+    <div class="hero-left">
+
+        <h2>Skip the Wait.</h2>
+
+        <p>
+            Manage queues smarter and reduce waiting time.
+        </p>
+
+        <button id="joinBtn">
+            Join Queue
+        </button>
+
+    </div>
+
+    <div class="hero-right">
+        <img src="https://cdn-icons-png.flaticon.com/512/2784/2784487.png">
+    </div>
+</section>
+
+
+<div class="container">
+
+<div class="card">
+
+<h2>Join Queue</h2>
+
+<input type="text" id="name" placeholder="Enter Name">
+
+<input type="number" id="phone" placeholder="Phone Number">
+
+<select id="service">
+
+<option>General Service</option>
+
+<option>Support</option>
+
+<option>Consultation</option>
+
+</select>
+
+<button onclick="generateToken()">
+Get Token
+</button>
+
+<script src="app.js"></script>
+</div>
+
+
+
+<div class="card">
+
+<h2>Your Token</h2>
+
+<h1 id="token">
+
+</h1>
+
+<p id="message">
+Join queue to get token
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>Live Queue Status</h2>
+
+<p>
+Now Serving:
+<span id="serving">
+Q001
+</span>
+</p>
+
+<p>
+People Ahead:
+<span id="ahead">
+0
+</span>
+</p>
+
+<p>
+Estimated Wait:
+<span id="time">
+0 mins
+</span>
+</p>
+
+<div class="progress">
+
+<div class="bar" id="bar"></div>
+
+</div>
+
+</div>
+
+
+</div>
+
+<footer>
+
+<p>
+© 2026 QLess
+</p>
+
+</footer>
+
+
+</body>
+</html>
